@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view the website here: [EzSchedUCSD](https://main.d155bf1z6hos60.amplifyapp.com/)
 
 ## Available Scripts
 
