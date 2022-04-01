@@ -15,6 +15,7 @@ import {
 import {
   schedules
 } from './mock-data/schedules';
+import logger from '../utils/logger'
 
 
 const REACT_APP_API_ENDPOINT_BASE = process.env.REACT_APP_API_ENDPOINT_BASE;
@@ -113,7 +114,7 @@ export const handlers = [
 
 
   rest.post(fromBase('/schedules'), (req, res, ctx) => {
-    console.log(`CLIENT REQUEST FOR SCHEDULES WITH INFO: \n${JSON.stringify(req.body)}`)
+    logger(`CLIENT REQUEST FOR SCHEDULES WITH INFO: \n${JSON.stringify(req.body)}`)
 
     // Get the body. 
     // If there are three courses, just return an error.

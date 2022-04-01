@@ -178,7 +178,7 @@ function App() {
         }
       })
       .catch(err => {
-        console.log(err);
+        logger(err);
         setLoadingState(false, true, err.message)
       });
 

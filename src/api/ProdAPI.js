@@ -1,4 +1,5 @@
 import axios from "axios";
+import logger from '../utils/logger';
 
 const API_ENDPOINT_BASE=process.env.REACT_APP_API_ENDPOINT_BASE;
 
@@ -113,8 +114,8 @@ class API {
     if (preferredStartTime)
       requestBodyJSON.preferred_start_time = preferredStartTime;
 
-    console.log("request body schedules");
-    console.log(JSON.stringify(requestBodyJSON));
+    logger("request body schedules");
+    logger(JSON.stringify(requestBodyJSON));
 
     return axios({
       method: "post",
@@ -129,7 +130,7 @@ class API {
         return response.data.data.schedule_id;
       })
       .catch(error => {
-        console.log(error);
+        logger(error);
         return API.axiosPromiseRejected(error, "Unable to post schedules to API.");
       })
   }

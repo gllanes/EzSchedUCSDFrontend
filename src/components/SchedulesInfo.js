@@ -147,7 +147,7 @@ function SchedulesHeader(props) {
   }
 
   // Get the current schedule object.
-  console.log(JSON.stringify(schedulesInfo))
+  logger(JSON.stringify(schedulesInfo))
   const index = currentScheduleIndex;
   const currentSchedule = schedulesInfo.schedules[index];
   var scheduleMetaInfoList = getScheduleMeta(currentSchedule);
