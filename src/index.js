@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 
 // Setup mock server if this is a development environment
-if (process.env.REACT_APP_MOCK === 't') {
+if (process.env.NODE_ENV === 'development'
+    || process.env.NODE_ENV === 'test') {
   // FIXME: can't resolve fs error.
   // require('dotenv').config();
   const { worker } = require('./mocks/browser')
