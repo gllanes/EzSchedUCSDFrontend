@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ezscheducsd/static/css/main.8cdf351a.css",
+    "main.js": "/ezscheducsd/static/js/main.8a5bc0b6.js",
+    "static/js/787.6e3f4b58.chunk.js": "/ezscheducsd/static/js/787.6e3f4b58.chunk.js",
+    "index.html": "/ezscheducsd/index.html",
+    "main.8cdf351a.css.map": "/ezscheducsd/static/css/main.8cdf351a.css.map",
+    "main.8a5bc0b6.js.map": "/ezscheducsd/static/js/main.8a5bc0b6.js.map",
+    "787.6e3f4b58.chunk.js.map": "/ezscheducsd/static/js/787.6e3f4b58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cdf351a.css",
+    "static/js/main.8a5bc0b6.js"
+  ]
+}
